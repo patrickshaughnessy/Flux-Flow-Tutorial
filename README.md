@@ -5,7 +5,6 @@ This Sword Repo Is One Of Many We Are Building
 (Template For Simple React and GraphQL Setup)
 
 To Setup Run: npm run setup
-(Alternatively replace npm start with nodemon if installed)
 
 To Start Server Run: npm start 
 

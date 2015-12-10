@@ -10,26 +10,18 @@
     "babel-cli": "^6.3.15",
     "babel-core": "^6.3.15",
     "babel-preset-es2015": "^6.3.13",
-    "body-parser": "^1.14.1",
-    "cookie-parser": "^1.4.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
     "express-graphql": "^0.4.5",
     "graphql": "^0.4.14",
     "jspm": "^0.16.15",
     "kerberos": "0.0.17",
-<<<<<<< HEAD
     "morgan": "^1.6.1",
     "serve-favicon": "^2.3.0",
-    "webpack": "^1.12.9"
-=======
     "webpack": "^1.12.9",
-    "morgan": "~1.6.1",
-    "body-parser": "~1.13.2",
     "cookie-parser": "~1.3.5",
     "debug": "^2.2.0",
     "serve-favicon": "~2.3.0"
->>>>>>> 8a177f9dd331f449878c2b5978a245d60506a9f0
   },
   "jspm": {
     "directories": {

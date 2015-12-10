@@ -11,10 +11,24 @@ import {
 
 let schema = new GraphQLSchema({
   query: new GraphQLObjectType({
-  }), 
+    name: 'Query',
+    fields: ({
+      test: {
+        type: GraphQLString, 
+        resolve: () => "Test"
+      }
+    })
+  }) 
 
-  mutation: new GraphQLObjectType({
-  })
+  // mutation: new GraphQLObjectType({
+  //  name : 'Mutation',
+  //  fields: ({
+  //    test: {
+  //      type: GraphQLString, 
+  //      resolve: () => "Test" 
+  //    }
+  //  })
+  // })
 });
 
 export default schema;

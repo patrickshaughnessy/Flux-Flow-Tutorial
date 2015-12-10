@@ -8,7 +8,7 @@ import bodyParser from 'body-parser';
 import schema from "./data/schema";
 import GraphQLHTTP from "express-graphql";
 
-import router from './routes/index';
+import routes from './routes/index';
 
 let PORT = process.env.PORT || 3000;
 

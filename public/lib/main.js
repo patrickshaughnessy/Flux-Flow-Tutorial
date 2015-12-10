@@ -1,4 +1,5 @@
 import React from "react";
 import ReactDOM from "react-dom";
+import AppController from "./components/AppController"
 
-ReactDOM.render(<div>Hello World!</div>, document.getElementById("react"));
+ReactDOM.render(<AppController/>, document.getElementById("react"));

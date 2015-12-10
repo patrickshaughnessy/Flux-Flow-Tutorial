@@ -1,14 +1,14 @@
 import express from 'express';
-let path = require('path');
-let favicon = require('serve-favicon');
-let logger = require('morgan');
-let cookieParser = require('cookie-parser');
-let bodyParser = require('body-parser');
+import path from 'path';
+import favicon from 'serve-favicon';
+import logger from 'morgan';
+import cookieParser from 'cookie-parser';
+import bodyParser from 'body-parser';
 
 import schema from "./data/schema";
 import GraphQLHTTP from "express-graphql";
 
-let routes = require('./routes/index');
+import router from './routes/index';
 
 let PORT = process.env.PORT || 3000;
 
@@ -34,7 +34,7 @@ app.use("/graphql", GraphQLHTTP({
 }));
 
 // catch 404 and forward to error handler
-app.use(function(req, res, next) {
+app.use((req, res, next) => {
   let err = new Error('Not Found');
   err.status = 404;
   next(err);
@@ -45,7 +45,7 @@ app.use(function(req, res, next) {
 // development error handler
 // will print stacktrace
 if (app.get('env') === 'development') {
-  app.use(function(err, req, res, next) {
+  app.use((err, req, res, next) => {
     res.status(err.status || 500);
     res.render('error', {
       message: err.message,
@@ -56,7 +56,7 @@ if (app.get('env') === 'development') {
 
 // production error handler
 // no stacktraces leaked to user
-app.use(function(err, req, res, next) {
+app.use((err, req, res, next) => {
   res.status(err.status || 500);
   res.render('error', {
     message: err.message,
@@ -69,4 +69,3 @@ app.listen(PORT, () => {
 })
 
 
-module.exports = app;

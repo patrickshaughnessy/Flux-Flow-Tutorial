@@ -4,8 +4,10 @@ No React Ninja Is Good Without His Tools
 This Sword Repo Is One Of Many We Are Building
 (Template For Simple React and GraphQL Setup)
 
-To Setup Run: npm i && jspm i && npm start
+To Setup Run: npm run setup
 (Alternatively replace npm start with nodemon if installed)
+
+To Start Server Run: npm start 
 
 When setting up for a real db you will have to cahnge schema on your own! 
 A simple schema is setup for a query and has a commented mutation

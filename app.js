@@ -5,9 +5,6 @@ import logger from 'morgan';
 import cookieParser from 'cookie-parser';
 import bodyParser from 'body-parser';
 
-import schema from "./data/schema";
-import GraphQLHTTP from "express-graphql";
-
 import routes from './routes/index';
 
 let PORT = process.env.PORT || 3000;
@@ -27,11 +24,6 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', routes);
-
-app.use("/graphql", GraphQLHTTP({
-  schema,
-  graphiql: true
-}));
 
 // catch 404 and forward to error handler
 app.use((req, res, next) => {
@@ -67,5 +59,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
   console.log(`I'm listening on this port: ${PORT}`);
 })
-
-

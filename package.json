@@ -1,5 +1,5 @@
 {
-  "name": "playlist",
+  "name": "MyApp",
   "version": "0.0.0",
   "private": true,
   "scripts": {
@@ -17,13 +17,10 @@
     "debug": "^2.2.0",
     "ejs": "^2.3.4",
     "express": "^4.13.3",
-    "express-graphql": "^0.4.5",
-    "graphql": "^0.4.14",
     "jspm": "^0.16.15",
     "kerberos": "0.0.17",
     "morgan": "^1.6.1",
-    "serve-favicon": "~2.3.0",
-    "webpack": "^1.12.9"
+    "serve-favicon": "~2.3.0"
   },
   "jspm": {
     "directories": {
@@ -31,8 +28,7 @@
     },
     "dependencies": {
       "react": "npm:react@^0.14.3",
-      "react-dom": "npm:react-dom@^0.14.3",
-      "react-relay": "npm:react-relay@^0.6.0"
+      "react-dom": "npm:react-dom@^0.14.3"
     },
     "devDependencies": {
       "babel": "npm:babel-core@^5.8.24",

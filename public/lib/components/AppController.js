@@ -40,7 +40,7 @@ class AppController extends React.Component{
     return(
       <div className="app">
         <Input clickHandler={this.submitMessage.bind(this)} />
-        <Messages />
+        <Messages messages={this.state.messages} />
       </div>
     )
   }

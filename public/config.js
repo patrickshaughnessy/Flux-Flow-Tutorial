@@ -16,6 +16,9 @@ System.config({
     "babel": "npm:babel-core@5.8.34",
     "babel-runtime": "npm:babel-runtime@5.8.34",
     "core-js": "npm:core-js@1.2.6",
+    "events": "github:jspm/nodelibs-events@0.1.1",
+    "flux": "npm:flux@2.1.1",
+    "jquery": "npm:jquery@2.2.0",
     "react": "npm:react@0.14.3",
     "react-dom": "npm:react-dom@0.14.3",
     "react-relay": "npm:react-relay@0.6.0",
@@ -235,6 +238,18 @@ System.config({
       "create-hash": "npm:create-hash@1.1.2",
       "crypto": "github:jspm/nodelibs-crypto@0.1.0"
     },
+    "npm:fbemitter@2.0.1": {
+      "fbjs": "npm:fbjs@0.6.1",
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:fbjs@0.1.0-alpha.7": {
+      "core-js": "npm:core-js@1.2.6",
+      "fs": "github:jspm/nodelibs-fs@0.1.2",
+      "path": "github:jspm/nodelibs-path@0.1.0",
+      "process": "github:jspm/nodelibs-process@0.1.2",
+      "promise": "npm:promise@7.1.1",
+      "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+    },
     "npm:fbjs@0.3.2": {
       "core-js": "npm:core-js@1.2.6",
       "loose-envify": "npm:loose-envify@1.1.0",
@@ -250,6 +265,15 @@ System.config({
       "promise": "npm:promise@7.0.4",
       "ua-parser-js": "npm:ua-parser-js@0.7.10",
       "whatwg-fetch": "npm:whatwg-fetch@0.9.0"
+    },
+    "npm:fbjs@0.6.1": {
+      "process": "github:jspm/nodelibs-process@0.1.2"
+    },
+    "npm:flux@2.1.1": {
+      "fbemitter": "npm:fbemitter@2.0.1",
+      "fbjs": "npm:fbjs@0.1.0-alpha.7",
+      "immutable": "npm:immutable@3.7.6",
+      "process": "github:jspm/nodelibs-process@0.1.2"
     },
     "npm:graphql@0.4.13": {
       "babel-runtime": "npm:babel-runtime@5.8.34",
@@ -304,6 +328,10 @@ System.config({
       "assert": "github:jspm/nodelibs-assert@0.1.0"
     },
     "npm:promise@7.0.4": {
+      "asap": "npm:asap@2.0.3",
+      "fs": "github:jspm/nodelibs-fs@0.1.2"
+    },
+    "npm:promise@7.1.1": {
       "asap": "npm:asap@2.0.3",
       "fs": "github:jspm/nodelibs-fs@0.1.2"
     },

@@ -1,4 +1,6 @@
 import React from "react";
+import Input from "./Input";
+import Messages from "./Messages";
 
 class AppController extends React.Component{
   constructor(props){
@@ -8,7 +10,8 @@ class AppController extends React.Component{
   render(){
     return(
       <div className="app">
-        Hello World!
+        <Input />
+        <Messages />
       </div>
     )
   }

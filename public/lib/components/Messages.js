@@ -1,6 +1,6 @@
 import React from "react";
 
-class AppController extends React.Component{
+class Messages extends React.Component{
   constructor(props){
     super(props);
     this.state = {  }
@@ -14,4 +14,4 @@ class AppController extends React.Component{
   }
 }
 
-export default AppController
+export default Messages

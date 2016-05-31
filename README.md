@@ -1,6 +1,6 @@
 # Flux Flow Tutorial
 
-This is a starter kit and example repo for [my blog post on setting up the React Flux flow](http://www.patricktshaughnessy.com/#/blog#Your_First_Flux_Flow,_Demystified "link to blog post").
+This is a starter kit and example repo for [my blog post on setting up the React Flux flow](https://medium.com/@patrickshaughnessy/your-first-flux-flow-demystified-b7acdcb655a5 "link to blog post").
 
 To follow along with my blog post, just clone this repo and you're good to go.
 
